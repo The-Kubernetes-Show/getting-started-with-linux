@@ -67,6 +67,14 @@ Take a Look at the History of Linux
 3. [KillerCoda](https://killercoda.com/)
      - [Ubuntu Playground Scenario on KillerCoda](https://killercoda.com/playgrounds/scenario/ubuntu)
 4. Read a bit about [POSIX](https://www.quobyte.com/storage-explained/posix-filesystem/) (Portable Operating System Interface). it is okay if you don't understand everything yet.
+
+
+**Other reference links:**
+ - History of Linux  https://en.wikipedia.org/wiki/History_of_Linux
+- Linus Said - A SUSE Music Parody https://www.youtube.com/watch?v=oHNKTlz1lps
+- Linus Torvalds https://www.britannica.com/biography/Linus-Torvalds
+- Tux - the official mascot of the Linux kernel https://en.wikipedia.org/wiki/Tux_(mascot)
+
 ---
 ### Disclaimer
 The perspectives and opinions expressed in this document are entirely my own and do not represent the views or positions of my current or previous employers.
