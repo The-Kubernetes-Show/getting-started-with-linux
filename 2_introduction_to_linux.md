@@ -15,7 +15,7 @@ This balanced approach caters to learners at all levels, ensuring steady progres
 
 ### What is Linux?
 
-Linux is a powerful, open-source operating system that formsthe backbone of modern computing. From smartphones to supercomputers, Linux powers a vast array of devices and services. Its flexibility, security, and community-driven development make it an essential skill for anyone in tech.
+Linux is a powerful, open-source operating system that forms the backbone of modern computing. From smartphones to supercomputers, Linux powers a vast array of devices and services. Its flexibility, security, and community-driven development make it an essential skill for anyone in tech.
 
 ---
 ### Why Should You Learn Linux?
@@ -27,7 +27,7 @@ In a world increasingly driven by AI and automation, understanding Linux is more
 
 ### A Brief History of Linux
 
-Linux has a fascinating history that dates back to 1991 when Linus Torvalds created it as a free and open-source alternative to proprietary operating systems. Over the years,it has grown into a global phenomenon, supported by a vibrant community of developers and users. [Learn more about its history here.](https://en.wikipedia.org/wiki/History_of_Linux)
+Linux has a fascinating history that dates back to 1991 when Linus Torvalds created it as a free and open-source alternative to proprietary operating systems. Over the years,it has grown into a global phenomenon, supported by a vibrant community of developers and users. [Learn more about its history here](https://en.wikipedia.org/wiki/History_of_Linux). Watch a fun linux song "[Linus Said - A SUSE Music Parody](https://www.youtube.com/watch?v=oHNKTlz1lps)" by SUSE.
 
 ---
 ### Getting Started with Linux
@@ -53,9 +53,10 @@ Why Should One Learn Linux First?
 Getting Started with Linux
 Take a Look at the History of Linux
 - How to use the Linux Operating System:
-    - Live 
-    - Installed on disk  
     - Hosted shell
+    - Live CD/USB
+    - Installed on disk  
+
 
 ---
 
@@ -65,7 +66,7 @@ Take a Look at the History of Linux
 2. [Introduction to Linux (edX)](https://www.edx.org/learn/linux/the-linux-foundation-introduction-to-linux)
 3. [KillerCoda](https://killercoda.com/)
      - [Ubuntu Playground Scenario on KillerCoda](https://killercoda.com/playgrounds/scenario/ubuntu)
-
+4. Read a bit about [POSIX](https://www.quobyte.com/storage-explained/posix-filesystem/) (Portable Operating System Interface). it is okay if you don't understand everything yet.
 ---
 ### Disclaimer
 The perspectives and opinions expressed in this document are entirely my own and do not represent the views or positions of my current or previous employers.
