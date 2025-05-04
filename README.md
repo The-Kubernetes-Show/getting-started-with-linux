@@ -1,7 +1,7 @@
 # Welcome to TKS (The Kubernetes Show) repositories
 ### Getting Started with TKS
 * ##### [1. Introduction to the author](1_Introduction.md)
-* ##### [2. Introduction to linux, History of Linux and Video release plan](2_introduction_to_linux.md)
+* ##### [2. Introduction to Linux, History of Linux and Video release plan](2_introduction_to_linux.md)
 
 ---
 
