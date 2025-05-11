@@ -1,5 +1,5 @@
 ## Agenda
-
+### [YouTube Video](https://www.youtube.com/watch?v=XMQlhPtPryo)
 ### Weekly Video Release Plan
 To ensure a structured and engaging learning experience, I have designed a rotating schedule for video releases:
 - **Week 1**: Beginner-friendly content to help you build a strong foundation.
