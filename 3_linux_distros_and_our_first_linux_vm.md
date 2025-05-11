@@ -1,6 +1,6 @@
 # Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)
 
-### [YouTubeVideo](TBD)
+### [YouTube Video](TBD)
 ## Major Linux "Distributions"  
 
 ### Red Hat  
