@@ -79,7 +79,9 @@ Multipass is a lightweight VM manager that makes it easy to create and manage Li
 - **Installation Guide**: [Multipass Installation](https://canonical.com/multipass/install)  
 #### References
 [An Overview of Package Management in Linux](https://www.linode.com/docs/guides/linux-package-management-overview/)
+
 [Comparison of major Linux package management systems](https://linuxconfig.org/comparison-of-major-linux-package-management-systems)
+
 [Finding Your Way Around Files and Folders](https://www.linode.com/docs/guides/introduction-to-linux-concepts/#finding-your-way-around-files-and-folders)
 
 ---  
