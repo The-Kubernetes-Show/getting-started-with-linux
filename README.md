@@ -2,6 +2,7 @@
 ### Getting Started with TKS
 * ##### [1. Introduction to the author](1_Introduction.md)
 * ##### [2. Introduction to Linux, History of Linux and Video release plan](2_introduction_to_linux.md)
+* ##### [3. Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)](3_linux_distros_and_our_first_linux_vm.md)
 
 ---
 
