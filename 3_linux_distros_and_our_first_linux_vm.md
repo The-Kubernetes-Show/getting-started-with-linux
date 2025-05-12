@@ -1,6 +1,6 @@
 # Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)
 
-### [YouTube Video](TBD)
+### [YouTube Video](https://www.youtube.com/watch?v=U3n230K5d1U)
 ## Major Linux "Distributions"  
 
 ### Red Hat  
@@ -77,6 +77,31 @@ Below is a brief overview of the Linux filesystem structure:
 Multipass is a lightweight VM manager that makes it easy to create and manage Linux virtual machines.  
 
 - **Installation Guide**: [Multipass Installation](https://canonical.com/multipass/install)  
+
+- Build a VM with multipass
+    ```
+    multipass launch -v -c 2 -m 1024M -n learnlinux
+    ```
+- Run a single command with newly created VM
+    ```
+    multipass exec learnlinux -- uname -a
+    ```
+- Open a shell in the VM
+    ```
+    multipass shell learnlinux
+    ```
+- Start the VM
+    ```
+    multipass start learnlinux
+    ```
+- Stop the VM
+    ```
+    multipass stop learnlinux
+    ```
+- Purge deleted VMs
+    ```
+    multipass purge
+    ```
 
 ### References
 
