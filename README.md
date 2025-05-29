@@ -21,7 +21,7 @@ Below given sequence ensures a gradual increase in complexity and practical skil
 |--------|------------------------------------------|-----|-----|
 | 1      | Introduction & Distributions | [GitHub link](2_introduction_to_linux.md)|[YouTube Video](https://www.youtube.com/watch?v=XMQlhPtPryo)
 | 2      | Linux File System Structure | [GitHub link](3_linux_distros_and_our_first_linux_vm.md)| [YouTube Video](https://www.youtube.com/watch?v=U3n230K5d1U)|
-| 3      | Basic Linux Commands and Navigation              |       [GitHub link](3.1_basic_linux_cmds.md)             |                    |
+| 3      | Basic Linux Commands and Navigation              |       [GitHub link](3.1_basic_linux_cmds.md)             |    [YouTube Video](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
 | 4      | File Permissions and Ownership                   |                    |                    |
 | 5      | Editing Files in Linux                           |                    |                    |
 | 6      | Managing Software Packages                       |                    |                    |
