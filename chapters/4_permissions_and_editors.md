@@ -1,4 +1,4 @@
-# Linux File Permissions, Ownership, and Editing Files
+# Linux File Permissions and Ownership
 
 ---
 
@@ -73,6 +73,31 @@ See the [chown manual](https://man7.org/linux/man-pages/man1/chown.1.html) and [
 
 ---
 
+Following Table summarizes the effects of Linux permissions on files and directories:
+
+| Permission/Bit | Symbol | Numeric Notation | Effect on Files                                              | Effect on Directories                                                               |
+|----------------|--------|------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Read           | r      | 4                | View file contents                                          | List directory contents                                                             |
+| Write          | w      | 2                | Modify, delete, or rename file                              | Create, delete, or rename files within the directory                                |
+| Execute        | x      | 1                | Execute the file as a program                               | Enter the directory (`cd`), access files and subdirectories                         |
+| Sticky Bit     | t      | 1 (in special bits, octal 1000) | **No effect** (ignored on modern Linux)                     | Only file owner, directory owner, or root can delete/rename files inside            |
+| setgid         | s (g)  | 2 (in special bits, octal 2000) | If set on executable: run with group’s privileges           | New files/directories inherit group ownership from parent directory                 |
+| setuid         | s (u)  | 4 (in special bits, octal 4000) | If set on executable: run with file owner’s privileges      | **No effect** (ignored on directories)                                              |
+
+### Notes on Numeric Notation:
+
+- The basic permissions (read, write, execute) combine to form a three-digit number representing user, group, and others (e.g., 755).
+
+- The special bits (setuid, setgid, sticky) add a leading digit to the permission number:
+  - setuid = 4xxx
+  - setgid = 2xxx
+  - sticky = 1xxx
+
+Example:  
+`chmod 2755 directory` sets setgid, with rwxr-xr-x (755) permissions.
+
+---
+
 ### The Significance of Root and Regular Users
 
 - **Root user:** Has unrestricted access to all files and commands.
@@ -84,53 +109,13 @@ Read more about root and user management in [The Linux Documentation Project](ht
 
 ---
 
-## Editing Files in Linux
-
-### Introduction to Text Editors (`nano`, `vim`, `gedit`)
-
-Linux offers several text editors:
-
-- **nano:** Simple, terminal-based, beginner-friendly ([nano homepage](https://www.nano-editor.org/))
-- **vim:** Advanced, terminal-based, powerful features ([Vim documentation](https://www.vim.org/docs.php))
-- **gedit:** Graphical, easy to use, for desktop environments ([gedit documentation](https://help.gnome.org/users/gedit/stable/))
-
----
-
-### Basic Editing, Saving, and Exiting
-
-#### nano
-
-- Open: `nano file.txt`
-- Save: `Ctrl+O`, then Enter
-- Exit: `Ctrl+X`
-
-See the [nano cheatsheet](https://www.nano-editor.org/dist/latest/cheatsheet.html).
-
-#### vim
-
-- Open: `vim file.txt`
-- Enter insert mode: `i`
-- Save: `Esc`, then `:w` + Enter
-- Exit: `:q` + Enter (or `:wq` to save and exit)
-
-Find more at the [Vim beginner’s guide](https://www.openvim.com/).
-
-#### gedit
-
-- Open: `gedit file.txt`
-- Use the graphical interface to edit, save, and close
-
-See [gedit help](https://help.gnome.org/users/gedit/stable/).
-
----
-
 ## Further Reading
 
 - [Linux File Permissions Explained](https://www.redhat.com/en/blog/linux-file-permissions-explained)
-- [Introduction to Linux Permissions](https://phoenixnap.com/kb/linux-file-permissions)
-- [Beginner’s Guide to Vim](https://www.openvim.com/)
-- [nano Editor Documentation](https://www.nano-editor.org/docs.php)
 
+- [Introduction to Linux Permissions](https://phoenixnap.com/kb/linux-file-permissions)
+
+- [Wikipedia: Sticky bit](https://en.wikipedia.org/wiki/Sticky_bit)
 ---
 
 ### Summary
@@ -147,12 +132,7 @@ This comprehensive guide covers Linux file permissions, ownership, and file edit
     - Understanding root and regular user privileges
     - Working with recursive ownership changes
 
-3. Text Editors
-    - Basic usage of `nano`, `vim`, and `gedit`
-    - File editing, saving, and navigation
-    - Editor-specific commands and features
-
-4. Default Permissions
+3. Default Permissions
     - Understanding and configuring `umask`
     - Working with default file and directory permissions
     - Managing permission inheritance
@@ -178,53 +158,12 @@ chmod 640 testfile.txt
 2. Change the owner to a user named `newuser` and the group to `newgroup`.
 
 ```bash
+sudo usersadd newuser
 touch ownfile.txt
 sudo chown newuser:newgroup ownfile.txt
 ```
 
-### Exercise 3: Edit a File
-
-1. Open `testfile.txt` using `nano`.
-
-```bash
-nano testfile.txt
-```
-
-2. Add some text, save the file, and exit.
-
-```bash
-# Add text in nano, then save with Ctrl+O and exit with Ctrl+X
-```
-
-### Exercise 4: Explore `vim`
-
-1. Open `testfile.txt` using `vim`.
-
-```bash
-vim testfile.txt
-```
-
-2. Enter insert mode, add some text, save the file, and exit.
-
-```bash
-# Press 'i' to enter insert mode, type your text, then press Esc, type ':wq', and hit Enter to save and exit
-```
-
-### Exercise 5: Use `gedit`
-
-1. Open `testfile.txt` using `gedit`.
-
-```bash
-gedit testfile.txt
-```
-
-2. Use the graphical interface to edit the file, save it, and close `gedit`.
-
-```bash
-# Use the graphical interface to add text, then click Save and close the window
-```
-
-### Exercise 6: Check Permissions and Ownership
+### Exercise 3: Check Permissions and Ownership
 
 1. Check the permissions and ownership of `testfile.txt`.
 
@@ -232,7 +171,7 @@ gedit testfile.txt
 ls -l testfile.txt
 ```
 
-### Exercise 7: Change Permissions Recursively
+### Exercise 4: Change Permissions Recursively
 
 1. Create a directory named `testdir` and a file inside it named `nestedfile.txt`.
 
@@ -253,7 +192,7 @@ chmod 750 testdir
 chmod 640 testdir/nestedfile.txt
 ```
 
-### Exercise 8: Change Ownership Recursively
+### Exercise 5: Change Ownership Recursively
 
 1. Change the ownership of `testdir` and all its contents to `newuser:newgroup`.
 
@@ -261,35 +200,7 @@ chmod 640 testdir/nestedfile.txt
 sudo chown -R newuser:newgroup testdir
 ```
 
-### Exercise 9: Explore `gedit` Features
-
-1. Open `testfile.txt` in `gedit`.
-
-```bash
-gedit testfile.txt
-```
-
-2. Use features like find and replace, spell check, and formatting options.
-
-```bash
-# Use the graphical interface to explore these features
-```
-
-### Exercise 10: Practice with `vim`
-
-1. Open `testfile.txt` in `vim`.
-
-```bash
-vim testfile.txt
-```
-
-2. Practice navigating, editing, and saving files. Try using commands like `:set number` to show line numbers, `:set paste` for pasting text, and `:help` for assistance.
-
-```bash
-# Use the commands in vim to practice editing and navigation
-```
-
-### Exercise 11: Create a Script
+### Exercise 6: Create a Script
 
 1. Create a script named `permissions_script.sh` that:
    - Creates a file named `scriptfile.txt`.
@@ -304,7 +215,7 @@ echo 'sudo chown newuser:newgroup scriptfile.txt' >> permissions_script.sh
 chmod +x permissions_script.sh
 ```
 
-### Exercise 12: Run the Script
+### Exercise 7: Run the Script
 
 1. Execute the script you created in Exercise 11.
 
@@ -312,7 +223,7 @@ chmod +x permissions_script.sh
 ./permissions_script.sh
 ```
 
-### Exercise 13: Review and Reflect
+### Exercise 8: Review and Reflect
 
 1. Review the permissions and ownership of `scriptfile.txt`.
 
@@ -326,12 +237,12 @@ ls -l scriptfile.txt
 # Reflect on your learning experience and note any challenges or insights
 ```
 
-### Exercise 14: Create a Directory Structure
+### Exercise 9: Create a Directory Structure
 
 1. Create a directory structure with a parent directory named `project`, and two subdirectories named `src` and `docs`.
 
 ```bash
-mkdir -p project/src project/docs
+mkdir -p project/{src,docs}
 ```
 
 2. Inside `src`, create a file named `main.c` and set its permissions to allow the user to read, write, and execute, the group to read and execute, and others to have no permissions.
@@ -348,15 +259,16 @@ touch project/docs/README.md
 chmod 640 project/docs/README.md
 ```
 
-### Exercise 15: Change Ownership of the Directory Structure
+### Exercise 10: Change Ownership of the Directory Structure
 
 1. Change the ownership of the entire `project` directory and its contents to `newuser:newgroup`.
 
 ```bash
+sudo groupadd newgroup
 sudo chown -R newuser:newgroup project
 ```
 
-### Exercise 16: Verify Permissions and Ownership
+### Exercise 11: Verify Permissions and Ownership
 
 1. Verify the permissions and ownership of the `project` directory and its contents.
 
@@ -371,7 +283,7 @@ ls -l project/src/main.c
 ls -l project/docs/README.md
 ```
 
-### Exercise 17: Create a Backup Script
+### Exercise 12: Create a Backup Script
 
 1. Create a script named `backup_script.sh` that:
    - Creates a backup of the `project` directory.
@@ -386,7 +298,7 @@ echo 'sudo chown -R newuser:newgroup project_backup' >> backup_script.sh
 chmod +x backup_script.sh
 ```
 
-### Exercise 18: Run the Backup Script
+### Exercise 13: Run the Backup Script
 
 1. Execute the backup script you created in Exercise 17.
 
@@ -394,7 +306,7 @@ chmod +x backup_script.sh
 ./backup_script.sh
 ```
 
-### Exercise 19: Verify Backup Permissions and Ownership
+### Exercise 14: Verify Backup Permissions and Ownership
 
 1. Verify the permissions and ownership of the `project_backup` directory.
 
@@ -409,7 +321,7 @@ ls -l project_backup/src/main.c
 ls -l project_backup/docs/README.md
 ```
 
-### Exercise 20: Clean Up
+### Exercise 15: Clean Up
 
 1. Remove the `project`, `project_backup`, and `testfile.txt` files and directories to clean up your workspace.
 
@@ -417,7 +329,7 @@ ls -l project_backup/docs/README.md
 rm -rf project project_backup testfile.txt ownfile.txt scriptfile.txt
 ```
 
-### Exercise 21: Explore `chmod` Numeric Mode
+### Exercise 16: Explore `chmod` Numeric Mode
 
 1. Create a file named `numericfile.txt`.
 
@@ -431,7 +343,7 @@ touch numericfile.txt
 chmod 750 numericfile.txt
 ```
 
-### Exercise 22: Explore `chown` with Numeric User and Group IDs
+### Exercise 17: Explore `chown` with Numeric User and Group IDs
 
 1. Create a file named `uidgidfile.txt`.
 
@@ -445,7 +357,7 @@ touch uidgidfile.txt
 sudo chown 1001:1002 uidgidfile.txt
 ```
 
-### Exercise 23: Explore `chgrp` with Numeric Group ID
+### Exercise 18: Explore `chgrp` with Numeric Group ID
 
 1. Create a file named `chgrpfile.txt`.
 
@@ -459,7 +371,7 @@ touch chgrpfile.txt
 sudo chgrp 1002 chgrpfile.txt
 ```
 
-### Exercise 24: Explore `chmod` with Special Permissions
+### Exercise 19: Explore `chmod` with Special Permissions
 
 1. Create a file named `specialfile.txt`.
 
@@ -473,7 +385,7 @@ touch specialfile.txt
 chmod 4750 specialfile.txt
 ```
 
-### Exercise 25: Explore `chmod` with Sticky Bit
+### Exercise 20: Explore `chmod` with Sticky Bit
 
 1. Create a directory named `sticky_dir`.
 
@@ -487,7 +399,7 @@ mkdir sticky_dir
 chmod +t sticky_dir
 ```
 
-### Exercise 26: Explore `chmod` with Setgid on a Directory
+### Exercise 21: Explore `chmod` with Setgid on a Directory
 
 1. Create a directory named `setgid_dir`.
 
@@ -501,7 +413,7 @@ mkdir setgid_dir
 chmod g+s setgid_dir
 ```
 
-### Exercise 27: Explore `chmod` with Read-Only Permissions
+### Exercise 22: Explore `chmod` with Read-Only Permissions
 
 1. Create a file named `readonlyfile.txt`.
 
@@ -515,7 +427,7 @@ touch readonlyfile.txt
 chmod 440 readonlyfile.txt
 ```
 
-### Exercise 28: Explore `chmod` with Write-Only Permissions
+### Exercise 23: Explore `chmod` with Write-Only Permissions
 
 1. Create a file named `writeonlyfile.txt`.
 
@@ -529,7 +441,7 @@ touch writeonlyfile.txt
 chmod 200 writeonlyfile.txt
 ```
 
-### Exercise 29: Explore `chmod` with Execute-Only Permissions
+### Exercise 24: Explore `chmod` with Execute-Only Permissions
 
 1. Create a file named `executeonlyfile.txt`.
 
@@ -543,7 +455,7 @@ touch executeonlyfile.txt
 chmod 100 executeonlyfile.txt
 ```
 
-### Exercise 30: Explore `chmod` with All Permissions for User
+### Exercise 25: Explore `chmod` with All Permissions for User
 
 1. Create a file named `allpermissionsfile.txt`.
 
@@ -557,7 +469,7 @@ touch allpermissionsfile.txt
 chmod 700 allpermissionsfile.txt
 ```
 
-### Exercise 31: Explore `chmod` with All Permissions for Group
+### Exercise 26: Explore `chmod` with All Permissions for Group
 
 1. Create a file named `grouppermissionsfile.txt`.
 
@@ -571,7 +483,7 @@ touch grouppermissionsfile.txt
 chmod 740 grouppermissionsfile.txt
 ```
 
-### Exercise 32: Explore `chmod` with All Permissions for Others
+### Exercise 27: Explore `chmod` with All Permissions for Others
 
 1. Create a file named `otherpermissionsfile.txt`.
 
@@ -585,7 +497,7 @@ touch otherpermissionsfile.txt
 chmod 777 otherpermissionsfile.txt
 ```
 
-### Exercise 33: Explore `chmod` with No Permissions
+### Exercise 28: Explore `chmod` with No Permissions
 
 1. Create a file named `nopermissionsfile.txt`.
 
@@ -599,7 +511,7 @@ touch nopermissionsfile.txt
 chmod 000 nopermissionsfile.txt
 ```
 
-### Exercise 34: Explore `chmod` with Mixed Permissions
+### Exercise 29: Explore `chmod` with Mixed Permissions
 
 1. Create a file named `mixedpermissionsfile.txt`.
 
@@ -613,7 +525,7 @@ touch mixedpermissionsfile.txt
 chmod 640 mixedpermissionsfile.txt
 ```
 
-### Exercise 35: Explore `chmod` with Default Permissions
+### Exercise 30: Explore `chmod` with Default Permissions
 
 1. Create a file named `defaultpermissionsfile.txt`.
 
@@ -627,7 +539,7 @@ touch defaultpermissionsfile.txt
 chmod 644 defaultpermissionsfile.txt
 ```
 
-### Exercise 36: Explore `chmod` with Custom Permissions
+### Exercise 31: Explore `chmod` with Custom Permissions
 
 1. Create a file named `custompermissionsfile.txt`.
 
@@ -641,7 +553,7 @@ touch custompermissionsfile.txt
 chmod 750 custompermissionsfile.txt
 ```
 
-### Exercise 37: Explore `chmod` with Permissions for All
+### Exercise 32: Explore `chmod` with Permissions for All
 
 1. Create a file named `allpermissionsfile2.txt`.
 
@@ -655,7 +567,7 @@ touch allpermissionsfile2.txt
 chmod 777 allpermissionsfile2.txt
 ```
 
-### Exercise 38: Explore `chmod` with Permissions for User and Group
+### Exercise 33: Explore `chmod` with Permissions for User and Group
 
 1. Create a file named `usergrouppermissionsfile.txt`.
 
@@ -669,7 +581,7 @@ touch usergrouppermissionsfile.txt
 chmod 750 usergrouppermissionsfile.txt
 ```
 
-### Exercise 39: Explore `chmod` with Permissions for User and Others
+### Exercise 34: Explore `chmod` with Permissions for User and Others
 
 1. Create a file named `userotherspermissionsfile.txt`.
 
@@ -683,7 +595,7 @@ touch userotherspermissionsfile.txt
 chmod 751 userotherspermissionsfile.txt
 ```
 
-### Exercise 40: Explore `chmod` with Permissions for Group and Others
+### Exercise 35: Explore `chmod` with Permissions for Group and Others
 
 1. Create a file named `groupotherspermissionsfile.txt`.
 
@@ -697,7 +609,7 @@ touch groupotherspermissionsfile.txt
 chmod 755 groupotherspermissionsfile.txt
 ```
 
-### Exercise 41: Explore `chmod` with Permissions for User, Group, and Others
+### Exercise 36: Explore `chmod` with Permissions for User, Group, and Others
 
 1. Create a file named `fullpermissionsfile.txt`.
 
@@ -711,7 +623,7 @@ touch fullpermissionsfile.txt
 chmod 755 fullpermissionsfile.txt
 ```
 
-### Exercise 42: Explore `chmod` with Permissions for User and Group Only
+### Exercise 37: Explore `chmod` with Permissions for User and Group Only
 
 1. Create a file named `usergrouponlyfile.txt`.
 
@@ -725,7 +637,7 @@ touch usergrouponlyfile.txt
 chmod 750 usergrouponlyfile.txt
 ```
 
-### Exercise 43: Explore `chmod` with Permissions for Group Only
+### Exercise 38: Explore `chmod` with Permissions for Group Only
 
 1. Create a file named `grouponlyfile.txt`.
 
@@ -739,7 +651,7 @@ touch grouponlyfile.txt
 chmod 740 grouponlyfile.txt
 ```
 
-### Exercise 44: Explore `chmod` with Permissions for Others Only
+### Exercise 39: Explore `chmod` with Permissions for Others Only
 
 1. Create a file named `othersonlyfile.txt`.
 
@@ -753,7 +665,7 @@ touch othersonlyfile.txt
 chmod 751 othersonlyfile.txt
 ```
 
-### Exercise 45: Explore `chmod` with Permissions for User, Group, and Others with Special Bits
+### Exercise 40: Explore `chmod` with Permissions for User, Group, and Others with Special Bits
 
 1. Create a file named `specialbitsfile.txt`.
 
@@ -767,7 +679,7 @@ touch specialbitsfile.txt
 chmod 4755 specialbitsfile.txt
 ```
 
-### Exercise 46: Explore `chmod` with Permissions for User, Group, and Others with Sticky Bit
+### Exercise 41: Explore `chmod` with Permissions for User, Group, and Others with Sticky Bit
 
 1. Create a directory named `sticky_special_dir`.
 
@@ -781,7 +693,7 @@ mkdir sticky_special_dir
 chmod 1777 sticky_special_dir
 ```
 
-### Exercise 47: Explore `chmod` with Permissions for User, Group, and Others with Setgid
+### Exercise 42: Explore `chmod` with Permissions for User, Group, and Others with Setgid
 
 1. Create a directory named `setgid_special_dir`.
 
@@ -795,7 +707,7 @@ mkdir setgid_special_dir
 chmod 2775 setgid_special_dir
 ```
 
-### Exercise 48: Explore `chmod` with Permissions for User, Group, and Others with Setuid
+### Exercise 43: Explore `chmod` with Permissions for User, Group, and Others with Setuid
 
 1. Create a file named `setuid_special_file.txt`.
 
@@ -809,7 +721,7 @@ touch setuid_special_file.txt
 chmod 4755 setuid_special_file.txt
 ```
 
-### Exercise 49: Explore `chmod` with Permissions for User, Group, and Others with Setgid on a File
+### Exercise 44: Explore `chmod` with Permissions for User, Group, and Others with Setgid on a File
 
 1. Create a file named `setgid_special_file.txt`.
 
@@ -823,7 +735,7 @@ touch setgid_special_file.txt
 chmod 2755 setgid_special_file.txt
 ```
 
-### Exercise 50: Explore `chmod` with Permissions for User, Group, and Others with Sticky Bit on a File
+### Exercise 45: Explore `chmod` with Permissions for User, Group, and Others with Sticky Bit on a File
 
 1. Create a file named `sticky_special_file.txt`.
 
@@ -837,7 +749,7 @@ touch sticky_special_file.txt
 chmod 1775 sticky_special_file.txt
 ```
 
-### Exercise 51: Explore `chmod` with Permissions for User, Group, and Others with All Special Bits
+### Exercise 46: Explore `chmod` with Permissions for User, Group, and Others with All Special Bits
 
 1. Create a file named `all_special_file.txt`.
 
@@ -851,7 +763,7 @@ touch all_special_file.txt
 chmod 4777 all_special_file.txt
 ```
 
-### Exercise 52: Explore `chmod` with Permissions for User, Group, and Others with No Special Bits
+### Exercise 47: Explore `chmod` with Permissions for User, Group, and Others with No Special Bits
 
 1. Create a file named `no_special_file.txt`.
 
@@ -865,7 +777,7 @@ touch no_special_file.txt
 chmod 755 no_special_file.txt
 ```
 
-### Exercise 53: Explore `chmod` with Permissions for User, Group, and Others with Custom Special Bits
+### Exercise 48: Explore `chmod` with Permissions for User, Group, and Others with Custom Special Bits
 
 1. Create a file named `custom_special_file.txt`.
 
@@ -879,7 +791,7 @@ touch custom_special_file.txt
 chmod 4755 custom_special_file.txt
 ```
 
-### Exercise 54: Explore `chmod` with Permissions for User, Group, and Others with Custom Numeric Mode
+### Exercise 49: Explore `chmod` with Permissions for User, Group, and Others with Custom Numeric Mode
 
 1. Create a file named `custom_numeric_file.txt`.
 
@@ -893,7 +805,7 @@ touch custom_numeric_file.txt
 chmod 750 custom_numeric_file.txt
 ```
 
-### Exercise 55: Explore `chmod` with Permissions for User, Group, and Others with Custom Symbolic Mode
+### Exercise 50: Explore `chmod` with Permissions for User, Group, and Others with Custom Symbolic Mode
 
 1. Create a file named `custom_symbolic_file.txt`.
 
@@ -907,7 +819,7 @@ touch custom_symbolic_file.txt
 chmod u=rwx,g=rx,o= custom_symbolic_file.txt
 ```
 
-### Exercise 56: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Permissions
+### Exercise 51: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Permissions
 
 1. Create a directory named `custom_recursive_dir`.
 
@@ -927,7 +839,7 @@ touch custom_recursive_dir/recursive_file.txt
 chmod -R 750 custom_recursive_dir
 ```
 
-### Exercise 57: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Symbolic Mode
+### Exercise 52: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Symbolic Mode
 
 1. Create a directory named `custom_recursive_symbolic_dir`.
 
@@ -947,7 +859,7 @@ touch custom_recursive_symbolic_dir/recursive_symbolic_file.txt
 chmod -R u=rwx,g=rx,o= custom_recursive_symbolic_dir
 ```
 
-### Exercise 58: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Numeric Mode
+### Exercise 53: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Numeric Mode
 
 1. Create a directory named `custom_recursive_numeric_dir`.
 
@@ -967,7 +879,7 @@ touch custom_recursive_numeric_dir/recursive_numeric_file.txt
 chmod -R 750 custom_recursive_numeric_dir
 ```
 
-### Exercise 59: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Special Bits
+### Exercise 54: Explore `chmod` with Permissions for User, Group, and Others with Custom Recursive Special Bits
 
 1. Create a directory named `custom_recursive_special_dir`.
 
@@ -987,7 +899,7 @@ touch custom_recursive_special_dir/recursive_special_file.txt
 chmod -R 2750 custom_recursive_special_dir
 ```
 
-### Excercise 60: Explorer `umask` and Default Permissions
+### Excercise 55: Explorer `umask` and Default Permissions
 
 1. Check the current `umask` value.
 
@@ -1010,7 +922,7 @@ touch umask_file2.txt
 ls -l umask_file2.txt
 ```
 
-### Exercise 61: Explore `umask` with Custom Permissions
+### Exercise 56: Explore `umask` with Custom Permissions
 
 1. Set a custom `umask` value to `027` and create a file named `custom_umask_file.txt`.
 
@@ -1020,7 +932,7 @@ touch custom_umask_file.txt
 ls -l custom_umask_file.txt
 ```
 
-### Exercise 62: Explore `umask` with Recursive Directory Creation
+### Exercise 57: Explore `umask` with Recursive Directory Creation
 
 1. Create a directory named `umask_recursive_dir` with the current `umask` value.
 
@@ -1037,7 +949,7 @@ mkdir umask_recursive_dir/subdir
 ls -ld umask_recursive_dir/subdir
 ```
 
-### Exercise 63: Explore `umask` with File Creation in a Directory
+### Exercise 58: Explore `umask` with File Creation in a Directory
 
 1. Create a file named `umask_file_in_dir.txt` inside `umask_recursive_dir`.
 
@@ -1054,7 +966,7 @@ touch umask_recursive_dir/umask_file_in_dir2.txt
 ls -l umask_recursive_dir/umask_file_in_dir2.txt
 ```
 
-### Exercise 64: Explore `umask` with Special Permissions
+### Exercise 59: Explore `umask` with Special Permissions
 
 1. Create a file named `umask_special_file.txt` with the current `umask` value.
 
@@ -1073,7 +985,7 @@ chmod 644 umask_special_file2.txt
 ls -l umask_special_file2.txt
 ```
 
-### Exercise 65: Explore `umask` with Special Permissions on Directories
+### Exercise 60: Explore `umask` with Special Permissions on Directories
 
 1. Create a directory named `umask_special_dir` with the current `umask` value.
 
@@ -1090,7 +1002,7 @@ mkdir umask_special_dir/subdir_special
 ls -ld umask_special_dir/subdir_special
 ```
 
-### Exercise 66: Explore `umask` with Special Permissions on Files in a Directory
+### Exercise 61: Explore `umask` with Special Permissions on Files in a Directory
 
 1. Create a file named `umask_special_file_in_dir.txt` inside `umask_special_dir`.
 
@@ -1107,7 +1019,7 @@ touch umask_special_dir/umask_special_file_in_dir2.txt
 ls -l umask_special_dir/umask_special_file_in_dir2.txt
 ```
 
-### Exercise 67: Explore `umask` with Special Permissions on Files with Setuid
+### Exercise 62: Explore `umask` with Special Permissions on Files with Setuid
 
 1. Create a file named `umask_setuid_file.txt` with the current `umask` value.
 
@@ -1126,3 +1038,16 @@ chmod 4755 umask_setuid_file2.txt
 ls -l umask_setuid_file2.txt
 ```
 
+### Final Clean up
+
+1. Remove all files and directories created during the exercises to clean up your workspace.
+
+```bash
+rm -rf testfile.txt ownfile.txt scriptfile.txt project project_backup numericfile.txt uidgidfile.txt chgrpfile.txt specialfile.txt sticky_dir setgid_dir setuid_special_file.txt setgid_special_file.txt sticky_special_file.txt all_special_file.txt no_special_file.txt custom_special_file.txt custom_numeric_file.txt custom_symbolic_file.txt custom_recursive_dir custom_recursive_symbolic_dir custom_recursive_numeric_dir custom_recursive_special_dir umask_file.txt umask_file2.txt custom_umask_file.txt umask_recursive_dir umask_recursive_dir/subdir umask_recursive_dir/umask_file_in_dir.txt umask_recursive_dir/umask_file_in_dir2.txt umask_special_dir umask_special_dir/subdir_special umask_special_dir/umask_special_file_in_dir.txt umask_special_dir/umask_special_file_in_dir2.txt umask_setuid_file.txt umask_setuid_file2.txt
+```
+
+```bash
+# delete the user and group created for the exercises
+sudo userdel newuser
+sudo groupdel newgroup
+```
