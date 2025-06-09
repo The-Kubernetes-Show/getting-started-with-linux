@@ -1,6 +1,6 @@
 # Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)
 
-### [YouTube Video](https://www.youtube.com/watch?v=U3n230K5d1U)
+## [YouTube Video](https://www.youtube.com/watch?v=U3n230K5d1U)
 
 ## Major Linux "Distributions"  
 
@@ -69,13 +69,15 @@ Below is a brief overview of the Linux filesystem structure:
 - **/opt**: Optional software.  
 - **/root**: Root user home directory.  
 - **/proc**: System information.  
-![Linux Filesystem Structure](static/images/LinuxFilesystemStructure.png)
+![Linux Filesystem Structure](../static/images/LinuxFilesystemStructure.png)
 
 ### Special Filesystems  
 
+In addition to the standard filesystem structure, Linux includes special filesystems that provide access to system and hardware information:
+
 - **/dev**: Contains device files.  
 - **/sys**: Provides information about the system and hardware.  
-![Dev and Sys filesystems](static/images/dev_and_sys_filesystem.png)
+![Dev and Sys filesystems](../static/images/dev_and_sys_filesystem.png)
 
 ---
 
@@ -89,37 +91,37 @@ Multipass is a lightweight VM manager that makes it easy to create and manage Li
 
 - Build a VM with multipass
 
-    ```
+    ```bash
     multipass launch -v -c 2 -m 1024M -n learnlinux
     ```
 
 - Run a single command with newly created VM
 
-    ```
+    ```bash
     multipass exec learnlinux -- uname -a
     ```
 
 - Open a shell in the VM
 
-    ```
+    ```bash
     multipass shell learnlinux
     ```
 
 - Start the VM
 
-    ```
+    ```bash
     multipass start learnlinux
     ```
 
 - Stop the VM
 
-    ```
+    ```bash
     multipass stop learnlinux
     ```
 
 - Purge deleted VMs
 
-    ```
+    ```bash
     multipass purge
     ```
 
@@ -131,4 +133,4 @@ Multipass is a lightweight VM manager that makes it easy to create and manage Li
 
 - [Finding Your Way Around Files and Folders](https://www.linode.com/docs/guides/introduction-to-linux-concepts/#finding-your-way-around-files-and-folders)
 
----  
+---
