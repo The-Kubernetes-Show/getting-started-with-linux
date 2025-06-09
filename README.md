@@ -19,11 +19,11 @@ The following sequence is designed to progressively build your Linux skills, sta
 
 ### Table of Contents
 
-| Module | Topic                                    |GitHub Readme Link | YouTube Video Link|
+| Module | Topic                                    |GitHub Link | YouTube Link|
 |--------|------------------------------------------|-----|-----|
-| 1      | Introduction & Distributions | [GitHub link](2_introduction_to_linux.md)|[YouTube Video](https://www.youtube.com/watch?v=XMQlhPtPryo)
-| 2      | Linux File System Structure | [GitHub link](3_linux_distros_and_our_first_linux_vm.md)| [YouTube Video](https://www.youtube.com/watch?v=U3n230K5d1U)|
-| 3      | Basic Linux Commands and Navigation              |       [GitHub link](3.1_basic_linux_cmds.md)             |    [YouTube Video](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
+| 1      | Introduction & Distributions | [Link 1](2_introduction_to_linux.md)|[YouTube Video - 27 Apr 2025](https://www.youtube.com/watch?v=XMQlhPtPryo)
+| 2      | Linux File System Structure | [Link 1](3_linux_distros_and_our_first_linux_vm.md)| [YouTube Video - 11 May 2025](https://www.youtube.com/watch?v=U3n230K5d1U)|
+| 3      | Basic Linux Commands and Navigation              |       [Link 1](3.1_basic_linux_cmds.md)             |    [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
 | 4      | File Permissions and Ownership                   |                    |                    |
 | 5      | Editing Files in Linux                           |                    |                    |
 | 6      | Managing Software Packages                       |                    |                    |
@@ -57,11 +57,11 @@ The following sequence is designed to progressively build your Linux skills, sta
 
 ---
 
-**1. [Introduction to Linux, History of Linux and Video release plan](2_introduction_to_linux.md)**
+##### 1. [Introduction to Linux, History of Linux and Video release plan](2_introduction_to_linux.md)
 
-**2. [Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)](3_linux_distros_and_our_first_linux_vm.md)**
+##### 2. [Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)](3_linux_distros_and_our_first_linux_vm.md)
 
-##### 3. Basic Linux Commands and Navigation
+##### 3. [Basic Linux Commands and Navigation](https://www.youtube.com/watch?v=GtxGxAdI_rI)
 
 - Learn to use the terminal/CLI (Command Line Interface)
 - Navigating the file system (`cd`, `ls`, `pwd`)
