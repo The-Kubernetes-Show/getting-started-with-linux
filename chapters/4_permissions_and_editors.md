@@ -4,6 +4,8 @@
 
 ## File Permissions and Ownership
 
+### [YouTube Video](https://www.youtube.com/watch?v=_pletZMbTT0)
+
 ### Understanding Permissions (Read, Write, Execute)
 
 Linux controls access to files and directories using a permission system. Each file and directory has three types of permissions:

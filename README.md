@@ -24,7 +24,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 1      | Introduction & Distributions | [Link 1](chapters/2_introduction_to_linux.md)|[YouTube Video - 27 Apr 2025](https://www.youtube.com/watch?v=XMQlhPtPryo)
 | 2      | Linux File System Structure | [Link 1](chapters/3_linux_distros_and_our_first_linux_vm.md)| [YouTube Video - 11 May 2025](https://www.youtube.com/watch?v=U3n230K5d1U)|
 | 3      | Basic Linux Commands and Navigation              |       [Link 1](chapters/3.1_basic_linux_cmds.md)             |    [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
-| 4      | File Permissions and Ownership                   |   [Link 1](chapters/4_permissions_and_editors.md)                 |      [YouTube Video - 8 June 2025](TBD)              |
+| 4      | File Permissions and Ownership                   |   [Link 1](chapters/4_permissions_and_editors.md)                 |      [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
 | 5      | Editing Files in Linux                           |   [Link 1](chapters/5_editing_files.md)                 |      [YouTube Video - 22 June 2025](TBD)              |
 | 6      | Managing Software Packages                       |                    |                    |
 | 7      | User and Group Management                        |                    |                    |
