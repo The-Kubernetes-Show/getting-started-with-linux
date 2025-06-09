@@ -1,21 +1,23 @@
 # Welcome to TKS (The Kubernetes Show)
+
+## [Introduction with the Author](1_Introduction.md)
+
 ### Getting Started with Linux on TKS
 
-Below given sequence ensures a gradual increase in complexity and practical skills, building on the foundational knowledge already established in my current videos and GitHub material.
+The following sequence is designed to progressively build your Linux skills, starting from the basics and advancing to more complex, hands-on topics. Each step builds on the previous material, ensuring a smooth learning curve aligned with the content in my videos and GitHub resources.
 
-#### **A quick summary table of topices by expereience level**
+### Summary Table: Topics by Experience Level
 
-| Level         | Topic Area                                   |
-|---------------|----------------------------------------------|
-| Beginner      | 1-12                             |
-| Intermediate  | 13-18                                        |
-| Advanced      | 19-29                                        |
-| Specialized   | 30-33                                        |
-
----
-**[Introduction with the Author](1_Introduction.md)**
+| Level        | Topic Range         | Description                                  |
+|--------------|--------------------|----------------------------------------------|
+| Beginner     | 1–12               | Foundational Linux concepts and basic skills |
+| Intermediate | 13–18              | Deeper system management and automation      |
+| Advanced     | 19–29              | Kernel, security, performance, and scaling   |
+| Specialized  | 30–33              | Developer tools, DevOps, and forensics       |
 
 ---
+
+### Table of Contents
 
 | Module | Topic                                    |GitHub Readme Link | YouTube Video Link|
 |--------|------------------------------------------|-----|-----|
@@ -53,60 +55,68 @@ Below given sequence ensures a gradual increase in complexity and practical skil
 | 32     | Linux in DevOps and CI/CD                        |                    |                    |
 | 33     | Incident Response and Forensics                  |                    |                    |
 
-
-
 ---
 
 **1. [Introduction to Linux, History of Linux and Video release plan](2_introduction_to_linux.md)**
 
 **2. [Getting Started with Linux: Major Linux Distributions and our first Linux VM (Virtual Machine)](3_linux_distros_and_our_first_linux_vm.md)**
 
-**3. Basic Linux Commands and Navigation**
+##### 3. Basic Linux Commands and Navigation
+
 - Learn to use the terminal/CLI (Command Line Interface)
 - Navigating the file system (`cd`, `ls`, `pwd`)
 - Viewing and manipulating files (`cat`, `less`, `head`, `tail`, `cp`, `mv`, `rm`, `mkdir`, `rmdir`)
 
-**4. File Permissions and Ownership**
+##### 4. File Permissions and Ownership
+
 - Understanding permissions (read, write, execute)
 - Changing permissions with `chmod`
 - Changing ownership with `chown` and `chgrp`
 - The significance of root and regular users
 
-**5. Editing Files in Linux**
+##### 5. Editing Files in Linux
+
 - Introduction to text editors (`nano`, `vim`, `gedit`)
 - Basic editing, saving, and exiting
 
-**6. Managing Software Packages**
+##### 6. Managing Software Packages
+
 - Installing, updating, and removing software using package managers (`apt`, `yum`, `dnf`, `zypper`)
 - Searching for packages
 - Understanding repositories
 
-**7. User and Group Management**
+##### 7. User and Group Management
+
 - Creating and managing users (`useradd`, `usermod`, `passwd`)
 - Creating and managing groups (`groupadd`, `groupmod`)
 - Switching users (`su`, `sudo`)
 
-**8. Linux Processes and System Monitoring**
+##### 8. Linux Processes and System Monitoring
+
 - Viewing running processes (`ps`, `top`, `htop`)
 - Managing processes (`kill`, `pkill`, `jobs`, `bg`, `fg`)
 - Understanding system resource usage
 
-**9. Networking Basics**
+##### 9. Networking Basics
+
 - Checking network configuration (`ifconfig`, `ip`, `hostname`)
 - Testing connectivity (`ping`, `traceroute`, `netstat`)
 - Editing network configuration files
 
-**10. Disk and File System Management**
+##### 10. Disk and File System Management
+
 - Checking disk usage (`df`, `du`)
 - Mounting and unmounting drives (`mount`, `umount`)
 - Understanding partitions and filesystems
 
-**11. Shell Scripting Basics**
+##### 11. Shell Scripting Basics
+
 - Introduction to shell scripts
 - Writing and running simple scripts
 - Using variables and basic control structures (if, for, while)
 
-**12. System Logs and Troubleshooting**
+##### 12. System Logs and Troubleshooting
+
 - Locating and reading log files (`/var/log/`)
 - Using `dmesg` and `journalctl`
 - Basic troubleshooting steps
@@ -115,117 +125,139 @@ Below given sequence ensures a gradual increase in complexity and practical skil
 
 ### **Intermediate Topics**
 
-**13. Advanced Shell Scripting**
-   - Functions, error handling, and debugging scripts
-   - Automating repetitive tasks
+##### 13. Advanced Shell Scripting
 
-**14. Job Scheduling and Automation**
-   - Using `cron`, `at`, and `systemd` timers
-   - Introduction to configuration management tools (Puppet, Chef, and Ansible)
+- Functions, error handling, and debugging scripts
+- Automating repetitive tasks
 
-**15. System Boot Process and GRUB**
-   - Understanding BIOS/UEFI, bootloaders, and runlevels/targets
+##### 14. Job Scheduling and Automation
 
-**16. Process Management and Optimization**
-   - Managing priorities (`nice`, `renice`)
-   - Resource limits (`ulimit`)
-   - Background/foreground jobs
+- Using `cron`, `at`, and `systemd` timers
+- Introduction to configuration management tools (Puppet, Chef, and Ansible)
 
-**17. Advanced File System Management**
-   - Working with LVM (Logical Volume Manager)
-   - RAID configuration and management
-   - Filesystem tuning and maintenance (`tune2fs`, `fsck`)
+##### 15. System Boot Process and GRUB
 
-**18. Backup and Restore Strategies**
-   - Tools: `rsync`, `tar`, `dd`
-   - Incremental and differential backups
-   - Disaster recovery planning
+- Understanding BIOS/UEFI, bootloaders, and runlevels/targets
+
+##### 16. Process Management and Optimization
+
+- Managing priorities (`nice`, `renice`)
+- Resource limits (`ulimit`)
+- Background/foreground jobs
+
+##### 17. Advanced File System Management
+
+- Working with LVM (Logical Volume Manager)
+- RAID configuration and management
+- Filesystem tuning and maintenance (`tune2fs`, `fsck`)
+
+##### 18. Backup and Restore Strategies
+
+- Tools: `rsync`, `tar`, `dd`
+- Incremental and differential backups
+- Disaster recovery planning
 
 ---
 
 ### **Advanced Topics**
 
-**19. Linux Kernel Internals and Optimization**
-   - Kernel modules: loading, unloading, compiling (`lsmod`, `modprobe`, `insmod`, `rmmod`)
-   - Kernel parameter tuning via `sysctl`
-   - Kernel updates and live patching
+##### 19. Linux Kernel Internals and Optimization
 
-**20. Security and Hardening**
-   - User and file security (SELinux, AppArmor)
-   - SSH hardening and key management
-   - Firewall configuration (`iptables`, `firewalld`, `ufw`)
-   - Security audits and patch management
+- Kernel modules: loading, unloading, compiling (`lsmod`, `modprobe`, `insmod`, `rmmod`)
+- Kernel parameter tuning via `sysctl`
+- Kernel updates and live patching
 
-**21. Centralized Logging and Monitoring**
-   - Setting up and managing centralized log systems (ELK Stack, Graylog)
-   - System monitoring tools: `top`, `htop`, `vmstat`, `iostat`, `free`
-   - Alerting and proactive monitoring
+##### 20. Security and Hardening
 
-**22. Networking: Advanced Configuration and Troubleshooting**
-   - Network performance tuning (TCP stack, `ethtool`)
-   - VLANs, bonding, and bridging
-   - DNS, DHCP, and network services management
+- User and file security (SELinux, AppArmor)
+- SSH hardening and key management
+- Firewall configuration (`iptables`, `firewalld`, `ufw`)
+- Security audits and patch management
 
-**23. Virtualization and Containers**
-   - KVM, QEMU, and VirtualBox basics
-   - Docker and Podman for containerization
-   - Orchestration with Kubernetes
+##### 21. Centralized Logging and Monitoring
 
-**24. High Availability and Load Balancing**
-   - Clustering with Pacemaker, Corosync
-   - Load balancing with HAProxy, Nginx
-   - Failover and redundancy strategies
+- Setting up and managing centralized log systems (ELK Stack, Graylog)
+- System monitoring tools: `top`, `htop`, `vmstat`, `iostat`, `free`
+- Alerting and proactive monitoring
 
-**25. Filesystem and Storage: Advanced Topics**
-   - Working with advanced filesystems (XFS, Btrfs, ZFS)
-   - Storage management for performance and reliability
-   - Networked storage: NFS, Samba, iSCSI
+##### 22. Networking: Advanced Configuration and Troubleshooting
 
-**26. Performance Tuning and Troubleshooting**
-   - Identifying and resolving bottlenecks
-   - Disk, CPU, and network optimization
-   - Benchmarking tools and methodologies
+- Network performance tuning (TCP stack, `ethtool`)
+- VLANs, bonding, and bridging
+- DNS, DHCP, and network services management
 
-**27. Automation and Infrastructure as Code**
-   - Scripting for automation (Bash, Python)
-   - Configuration management (Ansible, Puppet, Chef)
-   - Version control for system configs (Git)
+##### 23. Virtualization and Containers
 
-**28. Cloud Integration and Hybrid Environments**
-   - Using Linux in AWS, Azure, GCP
-   - Automation with cloud-native tools (CloudFormation, Terraform)
-   - Hybrid and multi-cloud strategies
+- KVM, QEMU, and VirtualBox basics
+- Docker and Podman for containerization
+- Orchestration with Kubernetes
 
-**29. Documentation and Best Practices**
-   - System documentation standards
-   - Change management and record-keeping
-   - Collaborative tools and wikis
+##### 24. High Availability and Load Balancing
+
+- Clustering with Pacemaker, Corosync
+- Load balancing with HAProxy, Nginx
+- Failover and redundancy strategies
+
+##### 25. Filesystem and Storage: Advanced Topics
+
+- Working with advanced filesystems (XFS, Btrfs, ZFS)
+- Storage management for performance and reliability
+- Networked storage: NFS, Samba, iSCSI
+
+##### 26. Performance Tuning and Troubleshooting
+
+- Identifying and resolving bottlenecks
+- Disk, CPU, and network optimization
+- Benchmarking tools and methodologies
+
+##### 27. Automation and Infrastructure as Code
+
+- Scripting for automation (Bash, Python)
+- Configuration management (Ansible, Puppet, Chef)
+- Version control for system configs (Git)
+
+##### 28. Cloud Integration and Hybrid Environments
+
+- Using Linux in AWS, Azure, GCP
+- Automation with cloud-native tools (CloudFormation, Terraform)
+- Hybrid and multi-cloud strategies
+
+##### 29. Documentation and Best Practices
+
+- System documentation standards
+- Change management and record-keeping
+- Collaborative tools and wikis
 
 ---
 
 ### **Specialized and Emerging Topics**
 
-**30. Linux for Developers**
-   - Development toolchains, compilers, and debugging
-   - Building and patching software from source
+##### 30. Linux for Developers
 
-**31. Programming and Visualization Tools**
-   - Using tools like Mermaid for system diagrams
-   - Integrating Linux with visualization and monitoring dashboards
+- Development toolchains, compilers, and debugging
+- Building and patching software from source
 
-**32. Linux in DevOps and CI/CD**
-   - Integration with CI/CD pipelines
-   - Automated testing and deployment
+##### 31. Programming and Visualization Tools
 
-**33. Incident Response and Forensics**
-   - Collecting and analyzing logs for incidents
-   - Forensics tools and methodologies
+- Using tools like Mermaid for system diagrams
+- Integrating Linux with visualization and monitoring dashboards
 
+##### 32. Linux in DevOps and CI/CD
+
+- Integration with CI/CD pipelines
+- Automated testing and deployment
+
+##### 33. Incident Response and Forensics
+
+- Collecting and analyzing logs for incidents
+- Forensics tools and methodologies
 
 ---
 
 ### Disclaimer
+
 The perspectives and opinions expressed in this document are entirely my own and do not represent the views or positions of my current or previous employers.
 
 ---
+>
 > - Link to ["The Kubernetes Show"](https://www.youtube.com/@thekubernetesshow) YouTube channel
