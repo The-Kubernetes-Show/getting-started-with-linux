@@ -113,7 +113,7 @@ Read more about root and user management in [The Linux Documentation Project](ht
 
 - [Linux File Permissions Explained](https://www.redhat.com/en/blog/linux-file-permissions-explained)
 
-- [Introduction to Linux Permissions](https://phoenixnap.com/kb/linux-file-permissions)
+- [Linux Permissions Explained](https://phoenixnap.com/kb/linux-file-permissions)
 
 - [Wikipedia: Sticky bit](https://en.wikipedia.org/wiki/Sticky_bit)
 ---
