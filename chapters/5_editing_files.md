@@ -10,6 +10,10 @@ Linux offers several text editors:
 
 ---
 
+[YouTube Video](https://www.youtube.com/watch?v=uLOZbbptePA)
+
+---
+
 ### Basic Editing, Saving, and Exiting
 
 #### nano
