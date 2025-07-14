@@ -26,7 +26,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 3      | Basic Linux Commands and Navigation              |       [Link 1](chapters/3.1_basic_linux_cmds.md)             |    [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
 | 4      | File Permissions and Ownership                   |   [Link 1](chapters/4_permissions_and_editors.md)                 |      [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
 | 5      | Editing Files in Linux                           |   [Link 1](chapters/5_editing_files.md)                 |      [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
-| 6      | Managing Software Packages                       |    [Link 1](chapters/6_software_package_management_in_linux.md)                |    [Video - 13 July 2025](TBD)                |
+| 6      | Managing Software Packages                       |    [Link 1](chapters/6_software_package_management_in_linux.md)                |    [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)                |
 | 7      | User and Group Management                        |                    |                    |
 | 8      | Linux Processes and System Monitoring            |                    |                    |
 | 9      | Networking Basics                                |                    |                    |

@@ -4,7 +4,7 @@ A practical guide to **Linux package management** with hands-on examples for bot
 
 ---
 
-[YouTube Video](TBD)
+[YouTube Video](https://youtu.be/WdvJkZN3RFk)
 
 ---
 
