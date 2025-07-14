@@ -26,7 +26,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 3      | Basic Linux Commands and Navigation              |       [Link 1](chapters/3.1_basic_linux_cmds.md)             |    [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
 | 4      | File Permissions and Ownership                   |   [Link 1](chapters/4_permissions_and_editors.md)                 |      [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
 | 5      | Editing Files in Linux                           |   [Link 1](chapters/5_editing_files.md)                 |      [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
-| 6      | Managing Software Packages                       |                    |                    |
+| 6      | Managing Software Packages                       |    [Link 1](chapters/6_software_package_management_in_linux.md)                |    [Video - 13 July 2025](TBD)                |
 | 7      | User and Group Management                        |                    |                    |
 | 8      | Linux Processes and System Monitoring            |                    |                    |
 | 9      | Networking Basics                                |                    |                    |
@@ -67,19 +67,19 @@ The following sequence is designed to progressively build your Linux skills, sta
 - Navigating the file system (`cd`, `ls`, `pwd`)
 - Viewing and manipulating files (`cat`, `less`, `head`, `tail`, `cp`, `mv`, `rm`, `mkdir`, `rmdir`)
 
-##### 4. File Permissions and Ownership
+##### 4. [File Permissions and Ownership](chapters/4_permissions_and_editors.md)
 
 - Understanding permissions (read, write, execute)
 - Changing permissions with `chmod`
 - Changing ownership with `chown` and `chgrp`
 - The significance of root and regular users
 
-##### 5. Editing Files in Linux
+##### 5. [Editing Files in Linux](chapters/5_editing_files.md)
 
 - Introduction to text editors (`nano`, `vim`, `gedit`)
 - Basic editing, saving, and exiting
 
-##### 6. Managing Software Packages
+##### 6. [Managing Software Packages](chapters/6_software_package_management_in_linux.md)
 
 - Installing, updating, and removing software using package managers (`apt`, `yum`, `dnf`, `zypper`)
 - Searching for packages
