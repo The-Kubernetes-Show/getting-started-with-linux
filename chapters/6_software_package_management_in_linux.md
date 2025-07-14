@@ -88,7 +88,20 @@ Official documentation:
 
 ## Red Hat (DNF/YUM, RPM) Package Management
 
+For redhat based systems, the package management system is based on **RPM** (Red Hat Package Manager). **DNF** (Dandified YUM) is the next-generation version of YUM, which is used for managing RPM packages.
+
 **DNF** (or the older **YUM**) is the standard package manager for Red Hat-based systems. **RPM** is used for lower-level package management.
+
+I am using Vagrant to run a Red Hat-based system, so the commands are tested on that environment. you can download the Vagrantfile from [here](https://portal.cloud.hashicorp.com/vagrant/discover/generic/rocky9). 
+
+e.g. I used following commands to build this environment:
+
+```bash
+mkdir rocky9
+cd rocky9
+vagrant init generic/rocky9 --box-version 4.3.12
+vagrant up
+```
 
 ### Common DNF/YUM Commands
 
