@@ -1,8 +1,8 @@
+# Getting Started with Linux on TKS
+
 # Welcome to TKS (The Kubernetes Show)
 
 ## [Introduction with the Author](chapters/1_Introduction.md)
-
-### Getting Started with Linux on TKS
 
 The following sequence is designed to progressively build your Linux skills, starting from the basics and advancing to more complex, hands-on topics. Each step builds on the previous material, ensuring a smooth learning curve aligned with the content in my videos and GitHub resources.
 
@@ -21,13 +21,13 @@ The following sequence is designed to progressively build your Linux skills, sta
 
 | Module | Topic                                    |GitHub Link | YouTube Link|
 |--------|------------------------------------------|-----|-----|
-| 1      | Introduction & Distributions | [Link 1](chapters/2_introduction_to_linux.md)|[YouTube Video - 27 Apr 2025](https://www.youtube.com/watch?v=XMQlhPtPryo)
-| 2      | Linux File System Structure | [Link 1](chapters/3_linux_distros_and_our_first_linux_vm.md)| [YouTube Video - 11 May 2025](https://www.youtube.com/watch?v=U3n230K5d1U)|
-| 3      | Basic Linux Commands and Navigation              |       [Link 1](chapters/3.1_basic_linux_cmds.md)             |    [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
-| 4      | File Permissions and Ownership                   |   [Link 1](chapters/4_permissions_and_editors.md)                 |      [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
-| 5      | Editing Files in Linux                           |   [Link 1](chapters/5_editing_files.md)                 |      [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
-| 6      | Managing Software Packages                       |    [Link 1](chapters/6_software_package_management_in_linux.md)                |    [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)                |
-| 7      | User and Group Management                        |                    |                    |
+| 1      | Introduction & Distributions | ✅ [Link 1](chapters/2_introduction_to_linux.md)| ✅ [YouTube Video - 27 Apr 2025](https://www.youtube.com/watch?v=XMQlhPtPryo)
+| 2      | Linux File System Structure | ✅ [Link 1](chapters/3_linux_distros_and_our_first_linux_vm.md)| ✅ [YouTube Video - 11 May 2025](https://www.youtube.com/watch?v=U3n230K5d1U)|
+| 3      | Basic Linux Commands and Navigation              | ✅ [Link 1](chapters/3.1_basic_linux_cmds.md) | ✅ [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
+| 4      | File Permissions and Ownership                   | ✅ [Link 1](chapters/4_permissions_and_editors.md) | ✅ [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
+| 5      | Editing Files in Linux                           | ✅ [Link 1](chapters/5_editing_files.md) | ✅ [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
+| 6      | Managing Software Packages                       | ✅ [Link 1](chapters/6_software_package_management_in_linux.md) | ✅ [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)                |
+| 7      | User and Group Management                        |   ✅ [Link 1](chapters/7_user_and_group_management.md) | ✅ [Video - 9 Aug 2025](TBD) |
 | 8      | Linux Processes and System Monitoring            |                    |                    |
 | 9      | Networking Basics                                |                    |                    |
 | 10     | Disk and File System Management                  |                    |                    |
