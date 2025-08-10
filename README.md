@@ -27,7 +27,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 4      | File Permissions and Ownership                   | ✅ [Link 1](chapters/4_permissions_and_editors.md) | ✅ [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
 | 5      | Editing Files in Linux                           | ✅ [Link 1](chapters/5_editing_files.md) | ✅ [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
 | 6      | Managing Software Packages                       | ✅ [Link 1](chapters/6_software_package_management_in_linux.md) | ✅ [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)                |
-| 7      | User and Group Management                        |   ✅ [Link 1](chapters/7_user_and_group_management.md) | ✅ [Video - 9 Aug 2025](TBD) |
+| 7      | User and Group Management                        |   ✅ [Link 1](chapters/7_user_and_group_management.md) | ✅ [Video - 9 Aug 2025](https://www.youtube.com/watch?v=kWNYNjCiNvg) |
 | 8      | Linux Processes and System Monitoring            |                    |                    |
 | 9      | Networking Basics                                |                    |                    |
 | 10     | Disk and File System Management                  |                    |                    |
@@ -85,7 +85,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 - Searching for packages
 - Understanding repositories
 
-##### 7. User and Group Management
+##### 7. [User and Group Management](chapters/7_user_and_group_management.md)
 
 - Creating and managing users (`useradd`, `usermod`, `passwd`)
 - Creating and managing groups (`groupadd`, `groupmod`)
