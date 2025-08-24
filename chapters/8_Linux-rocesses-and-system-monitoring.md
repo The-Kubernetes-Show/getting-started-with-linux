@@ -84,7 +84,7 @@ pidof bash
 - **jobs:** Shows background jobs in your shell.
 - **fuser:** Identifies which processes are using files or ports.
 
-See more details on each tool in the [official Ubuntu system monitoring page](https://help.ubuntu.com/community/SystemMonitoring) and Red Hat’s [system monitoring documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index).
+See more details on each tool in the Red Hat’s [system monitoring documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index).
 
 ---
 
@@ -103,7 +103,7 @@ vmstat 2 5
 - **free:** Quickly check memory usage.
 - **lsof:** See open files by processes.
 
-Find deeper explanations with [Ubuntu’s System Monitoring](https://help.ubuntu.com/community/SystemMonitoring) and Red Hat’s [Monitoring System Status & Performance](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index).
+Find deeper explanations with Red Hat’s [Monitoring System Status & Performance](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index).
 
 ---
 
@@ -116,7 +116,7 @@ ps -u username
 top -u username
 
 ```
-`htop` allows you to sort by user with simple navigation. Learn more about usage at Ubuntu’s and Red Hat’s official system docs on process management.
+**`htop`** and **`btop`** allows you to sort by user with simple navigation. Learn more about usage at Ubuntu’s and Red Hat’s official system docs on process management.
 
 ---
 
