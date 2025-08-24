@@ -28,7 +28,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 5      | Editing Files in Linux                           | ✅ [Link 1](chapters/5_editing_files.md) | ✅ [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
 | 6      | Managing Software Packages                       | ✅ [Link 1](chapters/6_software_package_management_in_linux.md) | ✅ [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)                |
 | 7      | User and Group Management                        |   ✅ [Link 1](chapters/7_user_and_group_management.md) | ✅ [Video - 9 Aug 2025](https://www.youtube.com/watch?v=kWNYNjCiNvg) |
-| 8      | Linux Processes and System Monitoring            |                    |                    |
+| 8      | Linux Processes and System Monitoring            |     ✅ [Link 1](chapters/8_Linux-rocesses-and-system-monitoring.md)               |      ✅ [Video - 23 Aug 2025](TBD)              |
 | 9      | Networking Basics                                |                    |                    |
 | 10     | Disk and File System Management                  |                    |                    |
 | 11     | Shell Scripting Basics                           |                    |                    |
