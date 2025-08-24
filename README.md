@@ -21,11 +21,11 @@ The following sequence is designed to progressively build your Linux skills, sta
 
 | Module | Topic                                    |GitHub Link | YouTube Link|
 |--------|------------------------------------------|-----|-----|
-| 1      | Introduction & Distributions | ✅ [Link 1](chapters/2_introduction_to_linux.md)| ✅ [YouTube Video - 27 Apr 2025](https://www.youtube.com/watch?v=XMQlhPtPryo)
-| 2      | Linux File System Structure | ✅ [Link 1](chapters/3_linux_distros_and_our_first_linux_vm.md)| ✅ [YouTube Video - 11 May 2025](https://www.youtube.com/watch?v=U3n230K5d1U)|
-| 3      | Basic Linux Commands and Navigation              | ✅ [Link 1](chapters/3.1_basic_linux_cmds.md) | ✅ [YouTube Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
-| 4      | File Permissions and Ownership                   | ✅ [Link 1](chapters/4_permissions_and_editors.md) | ✅ [YouTube Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
-| 5      | Editing Files in Linux                           | ✅ [Link 1](chapters/5_editing_files.md) | ✅ [YouTube Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
+| 1      | Introduction & Distributions | ✅ [Link 1](chapters/2_introduction_to_linux.md)| ✅ [Video - 27 Apr 2025](https://www.youtube.com/watch?v=XMQlhPtPryo)
+| 2      | Linux File System Structure | ✅ [Link 1](chapters/3_linux_distros_and_our_first_linux_vm.md)| ✅ [Video - 11 May 2025](https://www.youtube.com/watch?v=U3n230K5d1U)|
+| 3      | Basic Linux Commands and Navigation              | ✅ [Link 1](chapters/3.1_basic_linux_cmds.md) | ✅ [Video - 26 May 2025](https://www.youtube.com/watch?v=GtxGxAdI_rI)                |
+| 4      | File Permissions and Ownership                   | ✅ [Link 1](chapters/4_permissions_and_editors.md) | ✅ [Video - 8 June 2025](https://www.youtube.com/watch?v=_pletZMbTT0)
+| 5      | Editing Files in Linux                           | ✅ [Link 1](chapters/5_editing_files.md) | ✅ [Video - 22 June 2025](https://www.youtube.com/watch?v=uLOZbbptePA)              |
 | 6      | Managing Software Packages                       | ✅ [Link 1](chapters/6_software_package_management_in_linux.md) | ✅ [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)                |
 | 7      | User and Group Management                        |   ✅ [Link 1](chapters/7_user_and_group_management.md) | ✅ [Video - 9 Aug 2025](https://www.youtube.com/watch?v=kWNYNjCiNvg) |
 | 8      | Linux Processes and System Monitoring            |     ✅ [Link 1](chapters/8_Linux-rocesses-and-system-monitoring.md)               |      ✅ [Video - 23 Aug 2025](TBD)              |
@@ -91,7 +91,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 - Creating and managing groups (`groupadd`, `groupmod`)
 - Switching users (`su`, `sudo`)
 
-##### 8. Linux Processes and System Monitoring
+##### 8. [Linux Processes and System Monitoring](chapters/8_Linux-rocesses-and-system-monitoring.md)
 
 - Viewing running processes (`ps`, `top`, `htop`)
 - Managing processes (`kill`, `pkill`, `jobs`, `bg`, `fg`)
