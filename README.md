@@ -29,7 +29,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 6      | Managing Software Packages                       |✅ [Link 1](chapters/6_software_package_management_in_linux.md) |✅ [Video - 13 July 2025](https://youtu.be/WdvJkZN3RFk)|
 | 7      | User and Group Management                        |✅ [Link 1](chapters/7_user_and_group_management.md) |✅ [Video - 9 Aug 2025](https://www.youtube.com/watch?v=kWNYNjCiNvg)|
 | 8      | Linux Processes and System Monitoring            |✅ [Link 1](chapters/8_Linux-rocesses-and-system-monitoring.md) |✅ [Video - 23 Aug 2025](https://youtu.be/nbGCAWTn8k8)|
-| 9      | Networking Basics                                |                    |                    |
+| 9      | Networking Basics                                |✅ [Link 1](chapters/9_Linux-networking-basics.md)|✅ [Video - 7 Sep 2025](TBD)|
 | 10     | Disk and File System Management                  |                    |                    |
 | 11     | Shell Scripting Basics                           |                    |                    |
 | 12     | System Logs and Troubleshooting                  |                    |                    |
