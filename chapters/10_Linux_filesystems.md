@@ -6,7 +6,7 @@ Let’s dive in.
 
 ---
 ## Different types of filesystems
-
+```
 +-------------------------------+-----------+---------------------------------------------------------------------+
 | Type                          | Name      | Typical Usage / Notes                                               |
 +-------------------------------+-----------+---------------------------------------------------------------------+
@@ -25,7 +25,7 @@ Let’s dive in.
 |                               | procfs    | Virtual filesystem for process and kernel info                      |
 |                               | sysfs     | Virtual filesystem for device and kernel info                       |
 +-------------------------------+-----------+---------------------------------------------------------------------+
-
+```
 
 ## Checking Disk Usage
 
