@@ -2,7 +2,7 @@
 
 ---
 
-[YouTube Video](TBD)
+[YouTube Video](https://youtu.be/XsHUalXj0rw)
 
 ---
 
