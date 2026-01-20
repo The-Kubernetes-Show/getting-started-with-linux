@@ -30,7 +30,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 7      | User and Group Management                        |✅ [Link 1](chapters/7_user_and_group_management.md) |✅ [Video - 9 Aug 2025](https://www.youtube.com/watch?v=kWNYNjCiNvg)|
 | 8      | Linux Processes and System Monitoring            |✅ [Link 1](chapters/8_Linux-rocesses-and-system-monitoring.md) |✅ [Video - 23 Aug 2025](https://youtu.be/nbGCAWTn8k8)|
 | 9      | Networking Basics                                |✅ [Link 1](chapters/9_Linux-networking-basics.md)|✅ [Video - 7 Sep 2025](https://youtu.be/XsHUalXj0rw)|
-| 10     | Disk and File System Management                  |✅ [Link 1](chapters/10_Disk_and_FileSystem_Management.md) |✅ [Video - 19 Feb 2026](https://youtu.be/3HA16AIIeFk)|
+| 10     | Disk and File System Management                  |✅ [Link 1](chapters/10_Disk_and_FileSystem_Management.md), [Link 2](chapters/10.1_Linux_filesystems.md) |✅ [Video - 19 Feb 2026](https://youtu.be/3HA16AIIeFk)|
 | 11     | Shell Scripting Basics                           |                    |                    |
 | 12     | System Logs and Troubleshooting                  |                    |                    |
 | 13     | Advanced Shell Scripting                         |                    |                    |
