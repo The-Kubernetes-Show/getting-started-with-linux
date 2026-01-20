@@ -36,7 +36,7 @@ When a filesystem is mounted it becomes part of the single directory tree, attac
 >   to see disk devices on your system  
 > - Run:
 >   ```bash
->   mount | head
+>   mount |grep ^/dev|head
 >   ```
 >   and identify a few mount points and their filesystem types  
 
@@ -78,14 +78,18 @@ https://manpages.ubuntu.com/manpages/noble/man5/fstab.5.html
 
 > **Hands on**  
 > - Run:
+>
 >   ```bash
 >   lsblk
 >   ```
+>
 >   to see the mapping between devices, partitions, and mount points  
 > - View `/etc/fstab` with:
+>
 >   ```bash
 >   cat /etc/fstab
 >   ```
+>
 >   and try to match each line to a device and mount point from `lsblk`
 
 ---
@@ -403,8 +407,10 @@ RHEL’s “Using systemd.automount to mount a file system on demand with /etc/f
 > - Run:
 >
 >   ```bash 
+>   sudo systemctl -t mount list-unit-files
 >   sudo systemctl daemon-reload 
 >   sudo systemctl restart local-fs.target 
+>   sudo systemctl -t mount list-unit-files
 >   ```
 >
 > - Check:
@@ -442,8 +448,10 @@ WantedBy=multi-user.target
 Then:
 
 ```bash
+sudo systemctl -t mount list-unit-files
 sudo systemctl daemon-reload
 sudo systemctl enable --now mnt-data.mount
+sudo systemctl -t mount list-unit-files
 ```
 
 > **Hands on**
