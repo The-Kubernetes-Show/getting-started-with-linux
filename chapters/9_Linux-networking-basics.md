@@ -25,7 +25,7 @@ Linux networking enables devices to communicate over local and global networks. 
 
 ## Traffic flow in networking
 
-![networking-diagram](https://thermalcircle.de/lib/exe/fetch.php?media=linux:nf-hooks-detail1.jpg) 
+![networking-diagram](/static/images/nf-hooks-detail1.jpg) 
 Source: [thermalcircle.de - Nftables - Packet flow and Netfilter hooks in detail](https://thermalcircle.de/doku.php?id=blog:linux:nftables_packet_flow_netfilter_hooks_detail)
 
 ---
