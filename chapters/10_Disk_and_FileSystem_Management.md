@@ -1,5 +1,11 @@
 # Chapter 10: Disk and File System Management
 
+---
+
+[YouTube Video](https://youtu.be/3HA16AIIeFk)
+
+---
+
 Linux exposes storage through a single directory tree. In this chapter you will see how disks and partitions fit into that model and how to manage them safely as a beginner.
 
 ## 10.1 Learning goals
