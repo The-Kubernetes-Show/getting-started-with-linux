@@ -1,5 +1,11 @@
 # Chapter 11: Shell Scripting Basics
 
+---
+
+[YouTube Video](https://youtu.be/03IrMd84VMA)
+
+---
+
 At the command line you already run individual commands. Shell scripting lets you glue those commands together into repeatable, sharable workflows.
 
 ## 11.1 Learning goals
