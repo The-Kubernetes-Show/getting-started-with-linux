@@ -31,7 +31,7 @@ The following sequence is designed to progressively build your Linux skills, sta
 | 8      | Linux Processes and System Monitoring            |✅ [Link 1](chapters/8_Linux-rocesses-and-system-monitoring.md) |✅ [Video - 23 Aug 2025](https://youtu.be/nbGCAWTn8k8)|
 | 9      | Networking Basics                                |✅ [Link 1](chapters/9_Linux-networking-basics.md)|✅ [Video - 7 Sep 2025](https://youtu.be/XsHUalXj0rw)|
 | 10     | Disk and File System Management                  |✅ [Link 1](chapters/10_Disk_and_FileSystem_Management.md), [Link 2](chapters/10.1_Linux_filesystems.md) |✅ [Video - 19 Jan 2026](https://youtu.be/3HA16AIIeFk)|
-| 11     | Shell Scripting Basics                           |✅ [Link 1](chapters/11_Shell_Scripting_Basics.md) |✅ [Video - 15 Feb 2026](TBD)    |
+| 11     | Shell Scripting Basics                           |✅ [Link 1](chapters/11_Shell_Scripting_Basics.md) |✅ [Video - 15 Feb 2026](https://youtu.be/03IrMd84VMA)    |
 | 12     | System Logs and Troubleshooting                  |                    |                    |
 | 13     | Advanced Shell Scripting                         |                    |                    |
 | 14     | Job Scheduling and Automation                    |                    |                    |
