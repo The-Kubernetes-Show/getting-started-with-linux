@@ -103,13 +103,13 @@ The following sequence is designed to progressively build your Linux skills, sta
 - Testing connectivity (`ping`, `traceroute`, `netstat`)
 - Editing network configuration files
 
-##### 10. Disk and File System Management
+##### 10. [Disk and File System Management](chapters/10_Disk_and_FileSystem_Management.md)
 
 - Checking disk usage (`df`, `du`)
 - Mounting and unmounting drives (`mount`, `umount`)
 - Understanding partitions and filesystems
 
-##### 11. Shell Scripting Basics
+##### 11. [Shell Scripting Basics](chapters/11_Shell_Scripting_Basics.md)
 
 - Introduction to shell scripts
 - Writing and running simple scripts

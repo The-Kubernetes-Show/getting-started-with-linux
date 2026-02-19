@@ -537,3 +537,5 @@ To really internalize this chapter, work through these exercises on a disposable
 >     - one risk or limitation to be aware of
 
 If you can complete these tasks and explain what you did to someone else, you are ready for more advanced topics like LVM, RAID, and snapshot based backups.
+
+> ### [Follow this to coninue learn more about Linux Filesystems](10.1_Linux_filesystems.md)
